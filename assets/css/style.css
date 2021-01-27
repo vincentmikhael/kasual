@@ -73,6 +73,9 @@ select {
 select:checked {
   color: blue !important;
 }
+.btn-dark {
+  background-color: #013370 !important;
+}
 
 .btn {
   font-family: "Airbnb Cereal App", sans-serif !important;
