@@ -37,6 +37,21 @@ p {
   font-size: 24px;
   line-height: 36px;
 }
+.custom-select {
+  background: none !important;
+}
+select + i.fa {
+  float: right;
+  margin-top: -28px;
+  margin-right: 5px;
+  color: rgb(184, 180, 180);
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  background-color: #fff;
+  padding-right: 5px;
+}
 .box-promo {
   margin: 0 10px;
   min-width: 250px;
@@ -47,8 +62,16 @@ textarea::placeholder {
   color: rgb(209, 209, 209) !important;
 }
 
-select:nth-child(2) {
+select {
   color: rgb(209, 209, 209) !important;
+}
+
+.red-color {
+  color: #393939 !important;
+}
+
+select:checked {
+  color: blue !important;
 }
 
 .btn {
@@ -111,6 +134,7 @@ ul.stepper li.completed a .circle {
   -moz-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
 .text-promo {
   font-size: 13px;
   line-height: 18px;
@@ -127,5 +151,8 @@ ul.stepper li.completed a .circle {
   }
   label {
     font-size: 14px;
+  }
+  select + i.fa {
+    margin-top: -24px;
   }
 }
