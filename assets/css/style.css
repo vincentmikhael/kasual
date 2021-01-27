@@ -141,13 +141,86 @@ ul.stepper li.completed a .circle {
   -moz-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+.b-bottom {
+  border-bottom: 2px solid lightgray;
+}
 
 .text-promo {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
 }
+.text-radio {
+  position: relative;
+  top: 2px;
+}
 
+.radio {
+  position: relative !important;
+  margin-left: 40px;
+  margin-top: -7px;
+}
+input[type="radio"] {
+  position: absolute !important;
+  opacity: 0 !important;
+}
+
+.checkmark {
+  position: absolute !important;
+  top: -3px !important;
+  left: 0 !important;
+  height: 30px !important;
+  margin-left: -40px !important;
+  width: 30px !important;
+  border: 2px solid #013370 !important;
+  border-radius: 50% !important;
+}
+
+.radio:hover input ~ .checkmark {
+  background-color: #ccc !important;
+}
+
+.radio input:checked ~ .checkmark {
+  border: 2px solid $main !important;
+}
+
+.checkmark:after {
+  content: "" !important;
+  position: absolute !important;
+  display: none !important;
+}
+
+.radio input:checked ~ .checkmark:after {
+  display: block !important;
+}
+
+.radio .checkmark:after {
+  top: 2px !important;
+  left: 2px !important;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: #013370 !important;
+}
+
+.radio label {
+  color: #252525 !important;
+}
+
+.wrappers {
+  width: 100%;
+  display: flex !important;
+}
+ul.stepper li.done a .circle {
+  background-color: #34a806 !important;
+}
+ul.stepper li.done a .circle label {
+  color: #34a806 !important;
+}
+
+.heading {
+  margin-bottom: 2em !important;
+}
 @media only screen and (max-width: 600px) {
   input::placeholder,
   textarea::placeholder {
