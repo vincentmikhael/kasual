@@ -73,8 +73,12 @@ select {
 select:checked {
   color: blue !important;
 }
-.btn-dark {
+.btn-darkblue {
   background-color: #013370 !important;
+  color: white;
+}
+.btn-darkblue:hover {
+  color: white;
 }
 
 .btn {
