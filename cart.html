@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="http://fonts.cdnfonts.com/css/airbnb-cereal-app" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav style="border-bottom: 2px solid rgb(223, 223, 223);" class="">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-7 justify-content-center justify-content-md-end d-flex">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="col ml-5 align-items-center d-none d-lg-flex">
+                    <div class="">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="fas text-darkblue fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div class="">
+                        <a style="border-radius: 16px !important;" class="btn z-depth-0 btn-darkblue py-1 px-2">MUHAMMAD KAMAL <span><i class=" ml-2 fas fa-search"></i></span></a>
+                    </div>
+
+                    <div class="position-relative">
+                        <div class="cart-total">1</div>
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="fas text-darkblue fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-shopping-basket fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <nav class="d-lg-flex d-none py-1 justify-content-center" style="background-color: rgb(224, 224, 224);">
+        <div class="nav-bar">
+            <div class="dropdown">
+                <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Shop
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="">Promo <span class="badge badge-danger text-small">HOT</span></a>
+        </div>
+        <div class="nav-bar">
+            <a href="">Reviews</a>
+        </div>
+        <div class="nav-bar">
+            <a href="">Daybook</a>
+        </div>
+        <div class="nav-bar">
+            <div class="dropdown">
+                <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Size Guide
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="dropdown">
+                <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="dropdown">
+                <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Horizontal Steppers -->
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <p class="font-weight-bold mt-4 mt-md-0 mb-5 text-title-top">Keranjang Belanja</p>
+
+                <div class="">
+                    <div class="mt-md-3 mb-5 form-row">
+                        <div class="col-md-8 d-flex flex-column">
+                            <section class="order-2 mt-5 mt-md-4 mt-md-0 order-md-1">
+                                <p class="mb-2">Biar hemat pake kode promo</p>
+                                <div class="input-group mb-3">
+                                    <input style="height: 40px;" type="text" class="form-control"
+                                        placeholder="Masukkin kode promo" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button
+                                            class="btn d-flex ml-2 btn-darkblue m-0 px-3 px-md-4 py-2 z-depth-0 waves-effect"
+                                            type="button" id="button-addon2">Gunakan <span
+                                                class="d-none d-md-block ml-1"> Promo</span></button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="wrapper mt-5 center-block order-3 order-md-2">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active" role="tab" id="headingOne">
+                                            <h4 class="panel-title mt-n4">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <p class="ml-3 text-title-accordion">Promo yang bisa kamu gunakan
+                                                    </p>
+                                                </a>
+
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <div style="overflow-x: scroll;" class="d-flex">
+                                                    <div class="box-promo">
+                                                        <div class="border rounded">
+                                                            <div style="height: 80px;" class="bg-light w-100">.</div>
+                                                            <div class="px-2 pt-2">
+                                                                <p class="font-weight-bold">Title Promo</p>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <p class="text-promo">Periode Promo</p>
+                                                                    <p class="text-promo font-weight-bold">DD - DD Jan
+                                                                        2021</p>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <div class="text-promo">
+                                                                        <p>Kode promo</p>
+                                                                        <p class="font-weight-bold">XZALDPDPF</p>
+                                                                    </div>
+                                                                    <p class="text-promo font-weight-bold">
+                                                                        <i class="far fa-clone"></i>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-promo">
+                                                        <div class="border rounded">
+                                                            <div style="height: 80px;" class="bg-light w-100">.</div>
+                                                            <div class="px-2 pt-2">
+                                                                <p class="font-weight-bold">Title Promo</p>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <p class="text-promo">Periode Promo</p>
+                                                                    <p class="text-promo font-weight-bold">DD - DD Jan
+                                                                        2021</p>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <div class="text-promo">
+                                                                        <p>Kode promo</p>
+                                                                        <p class="font-weight-bold">XZALDPDPF</p>
+                                                                    </div>
+                                                                    <p class="text-promo font-weight-bold">
+                                                                        <i class="far fa-clone"></i>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-promo">
+                                                        <div class="border rounded">
+                                                            <div style="height: 80px;" class="bg-light w-100">.</div>
+                                                            <div class="px-2 pt-2">
+                                                                <p class="font-weight-bold">Title Promo</p>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <p class="text-promo">Periode Promo</p>
+                                                                    <p class="text-promo font-weight-bold">DD - DD Jan
+                                                                        2021</p>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex mt-2 justify-content-between align-items-center">
+                                                                    <div class="text-promo">
+                                                                        <p>Kode promo</p>
+                                                                        <p class="font-weight-bold">XZALDPDPF</p>
+                                                                    </div>
+                                                                    <p class="text-promo font-weight-bold">
+                                                                        <i class="far fa-clone"></i>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-promo d-flex pb-1">
+                                                        <div style="padding-top: 75px;"
+                                                            class="border rounded align-self-stretch">
+
+                                                            <div class="px-3 pt-2">
+                                                                <p class="font-weight-bold">Lihat promo lainnya <i
+                                                                        class="ml-2 fas fa-chevron-right"></i></p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="order-1 order-md-3">
+                                
+                                <hr class="ml-md-4">
+                                <div class="d-flex justify-content-between">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                        <label class="custom-control-label" for="defaultUnchecked">Pilih Semua</label>
+                                    </div>
+
+                                    <p>Hapus</p>
+                                </div>
+                                <hr class="ml-md-4">
+
+                                <section class="box-cart mt-0 mt-md-3">
+                                    <div class="d-flex">
+                                    <div class="d-flex align-items-md-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input " id="defaultUnchecked1">
+                                        <label class="custom-control-label " for="defaultUnchecked1">  
+                                        </label>
+                                    </div>
+                                    <img style="width: 80px; height: 80px;" src="assets/images/cart.png" alt="">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-md-flex justify-content-between pt-md-4 ml-4">
+                                        <div class="">
+                                            <p class="font-weight-bold">Black ankle pant</p>
+                                            <p class="text-muted">Size: L</p>
+                                        </div>
+                                        <div class="number ml-md-5">
+                                            <span class="minus">-</span>
+                                            <input class="number-form" type="text" value="1" />
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <p class="font-weight-bold">Rp. 400.000</p>
+                                        </div>
+                                        <div class="alert d-none d-md-block alert-dark ml-4">
+                                            <img class="mr-2" src="assets/images/warning.png" alt="">
+                                            Yuk, segera bayar! Stoknya tinggal 4 lagi
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex ml-md-3 mt-3 mt-md-0 justify-content-between align-items-center">
+                                        <p>Tambah catatan</p>
+                                        <div class="d-flex">
+                                            <p class="mr-2">Pindah ke whitelist</p>
+                                            <a href="" class="text-dark pl-2 border-left"><i class="far fa-trash-alt"></i></a>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                                <section class="box-cart mt-0 mt-md-3">
+                                    <div class="d-flex">
+                                    <div class="d-flex align-items-md-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input " id="defaultUnchecked2">
+                                        <label class="custom-control-label " for="defaultUnchecked2">  
+                                        </label>
+                                    </div>
+                                    <img style="width: 80px; height: 80px;" src="assets/images/cart.png" alt="">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-md-flex justify-content-between pt-md-4 ml-4">
+                                        <div class="">
+                                            <p class="font-weight-bold">Black ankle pant</p>
+                                            <p class="text-muted">Size: L</p>
+                                        </div>
+                                        <div class="number ml-md-5">
+                                            <span class="minus">-</span>
+                                            <input class="number-form" type="text" value="1" />
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <p class="font-weight-bold">Rp. 400.000</p>
+                                        </div>
+                                        <div class="alert d-none d-md-block alert-dark ml-4">
+                                            <img class="mr-2" src="assets/images/warning.png" alt="">
+                                            Yuk, segera bayar! Stoknya tinggal 4 lagi
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex ml-md-3 mt-3 mt-md-0 justify-content-between align-items-center">
+                                        <p>Tambah catatan</p>
+                                        <div class="d-flex">
+                                            <p class="mr-2">Pindah ke whitelist</p>
+                                            <a href="" class="text-dark pl-2 border-left"><i class="far fa-trash-alt"></i></a>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                                <section class="box-cart mt-0 mt-md-3">
+                                    <div class="d-flex">
+                                    <div class="d-flex align-items-md-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input " id="defaultUnchecked3">
+                                        <label class="custom-control-label " for="defaultUnchecked3">  
+                                        </label>
+                                    </div>
+                                    <img style="width: 80px; height: 80px;" src="assets/images/cart.png" alt="">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-md-flex justify-content-between pt-md-4 ml-4">
+                                        <div class="">
+                                            <p class="font-weight-bold">Black ankle pant</p>
+                                            <p class="text-muted">Size: L</p>
+                                        </div>
+                                        <div class="number ml-md-5">
+                                            <span class="minus">-</span>
+                                            <input class="number-form" type="text" value="1" />
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <p class="font-weight-bold">Rp. 400.000</p>
+                                        </div>
+                                        <div class="alert d-none d-md-block alert-dark ml-4">
+                                            <img class="mr-2" src="assets/images/warning.png" alt="">
+                                            Yuk, segera bayar! Stoknya tinggal 4 lagi
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex ml-md-3 mt-3 mt-md-0 justify-content-between align-items-center">
+                                        <p>Tambah catatan</p>
+                                        <div class="d-flex">
+                                            <p class="mr-2">Pindah ke whitelist</p>
+                                            <a href="" class="text-dark pl-2 border-left"><i class="far fa-trash-alt"></i></a>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md mt-5 mt-md-4 ml-0 ml-lg-4 mt-md-0">
+                            <section class="sticky-top">
+                                <p class="font-weight-bold">Ringkasan Belanja</p>
+                                <p>Total biaya terdiri biaya produk, unique kode dan ongkos kirim</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Subtotal (2)</p>
+                                    <p class="font-weight-bold">Rp.800.000</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Unique Code</p>
+                                    <p class="font-weight-bold">Rp.12</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Ongkos Kirim</p>
+                                    <p class="font-weight-bold">Rp.9000</p>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Total Harga</p>
+                                    <p class="font-weight-bold">Rp.809.012</p>
+                                </div>
+
+                                <button class="btn btn-darkblue mt-4 py-2 w-100">Lanjut ke pembayaran</button>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.Horizontal Steppers -->
+
+        <div class="row">
+            <div class="col-12">
+                <p class="font-weight-bold px-1 ml-2">Rekomendasi untuk anda</p>
+
+                <div style="overflow-x: scroll;" class="px-1 d-flex mt-4">
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="box-new">New</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>CHINOS</p>
+                                <a href="">Raven Chinos</a>
+                                <div class="">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    5 Reviews
+                                </div>
+                                <p class="font-weight-bold">Rp.250.000</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="box-new-double">New</div>
+                            <div class="box-new-orange">Sale!</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>DISCOUNT UP 10%</p>
+                                <a href="">Up to 70% - Clay Chino</a>
+                                <div class="">
+                                    <span style="text-decoration: line-through;" class="d-inline-block">Rp.100.000</span>
+                                    <p class="font-weight-bold d-inline-block">Rp.250.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>Chinos</p>
+                                <a href="">Raven Chinos</a>
+                                <div class="">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    5 Reviews
+                                </div>
+                                <p class="font-weight-bold">Rp.250.000</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="box-new-orange">Sale!</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>Chinos</p>
+                                <a href="">Raven Chinos</a>
+                                <div class="">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                    5 Reviews
+                                </div>
+                                <p class="font-weight-bold">Rp.250.000</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="box-new-orange">Sale!</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>Chinos</p>
+                                <a href="">Raven Chinos</a>
+                                <div class="">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                    5 Reviews
+                                </div>
+                                <p class="font-weight-bold">Rp.250.000</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                     <div class="box-recomend mx-2">
+                        <div class="position-relative">
+                            <div class="img-recomend bg-light w-100">.</div>
+                            <div class="box-new-orange">Sale!</div>
+                            <div class="px-2 pt-2 text-recomend text-center">
+                                <p>Chinos</p>
+                                <a href="">Raven Chinos</a>
+                                <div class="">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                    5 Reviews
+                                </div>
+                                <p class="font-weight-bold">Rp.250.000</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

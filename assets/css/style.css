@@ -57,6 +57,76 @@ select + i.fa {
   min-width: 250px;
   max-width: 250px;
 }
+.img-recomend {
+  height: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+.text-recomend {
+  font-size: 14px;
+}
+.box-new {
+  background-color: #013370;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  position: absolute;
+  top: 23px;
+  left: -3px;
+}
+.box-new-double {
+  background-color: #013370;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  position: absolute;
+  top: 53px;
+  left: -3px;
+  z-index: 1;
+}
+.box-new-orange {
+  background-color: #fc9b09;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  position: absolute;
+  top: 23px;
+  left: -3px;
+}
+.box-recomend {
+  min-width: 220px;
+  max-width: 220px;
+}
 input::placeholder,
 textarea::placeholder {
   color: rgb(209, 209, 209) !important;
@@ -91,6 +161,26 @@ select:checked {
   -ms-border-radius: 7px !important;
   -o-border-radius: 7px !important;
   text-transform: none !important;
+}
+.cart-total {
+  background-color: red;
+  width: 18px;
+  font-weight: bold;
+  height: 18px;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: -6px;
+  border-radius: 50px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
 }
 section {
   padding: 24px;
@@ -164,6 +254,18 @@ input[type="radio"] {
   position: absolute !important;
   opacity: 0 !important;
 }
+.nav-bar a {
+  color: black;
+  margin: 0 4px;
+}
+.text-darkblue {
+  color: #013370 !important;
+}
+.text-small {
+  font-size: 9px;
+  position: relative;
+  top: -6px;
+}
 
 .checkmark {
   position: absolute !important;
@@ -221,6 +323,49 @@ ul.stepper li.done a .circle label {
 .heading {
   margin-bottom: 2em !important;
 }
+.number {
+  display: flex;
+}
+.minus,
+.plus {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+.minus {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #c6c6c6;
+  color: white;
+}
+.plus {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #6f6f6f;
+  color: white;
+}
+.number-form {
+  height: 34px;
+  width: 50px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 0 !important;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
 @media only screen and (max-width: 600px) {
   input::placeholder,
   textarea::placeholder {
@@ -229,10 +374,23 @@ ul.stepper li.done a .circle label {
   select:nth-child(2) {
     font-size: 13px;
   }
+  .box-cart {
+    font-size: 13px;
+  }
   label {
     font-size: 14px;
   }
   select + i.fa {
     margin-top: -24px;
+  }
+  .box-recomend {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .img-recomend {
+    height: 250px;
+  }
+  .text-recomend {
+    font-size: 12px;
   }
 }
