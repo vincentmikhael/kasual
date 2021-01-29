@@ -143,9 +143,16 @@ select {
 select:checked {
   color: blue !important;
 }
+.email-section {
+  font-size: normal;
+}
 .btn-darkblue {
   background-color: #013370 !important;
   color: white;
+}
+.btn-outline-darkblue {
+  border: 2px solid#013370;
+  color: #013370 !important;
 }
 .btn-darkblue:hover {
   color: white;
@@ -392,5 +399,11 @@ ul.stepper li.done a .circle label {
   }
   .text-recomend {
     font-size: 12px;
+  }
+  .email-section {
+    font-size: 11px;
+  }
+  .email-btn {
+    font-size: 10px !important;
   }
 }
