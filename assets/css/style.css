@@ -302,7 +302,14 @@ input[type="radio"] {
 .radio input:checked ~ .checkmark:after {
   display: block !important;
 }
-
+.border-up {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+.border-down {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
 .radio .checkmark:after {
   top: 2px !important;
   left: 2px !important;
