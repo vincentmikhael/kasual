@@ -318,6 +318,9 @@ input[type="radio"] {
   border-radius: 50% !important;
   background: #013370 !important;
 }
+.bg-email {
+  background-color: #fafafa;
+}
 .text-price {
   font-size: 16px;
 }
